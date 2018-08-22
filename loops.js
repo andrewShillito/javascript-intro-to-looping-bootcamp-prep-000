@@ -18,15 +18,15 @@ function whileLoop(n){
 }
 
 
-var i =0;
-
 function doWhileLoop(arr){
+  var x = 0;
   do {
     arr.pop();
-    incrementVariable();
-  } while (arr.length>0 && incrementVariable()){}
+    incrementVariable(x);
+  } while (arr.length>0 && incrementVariable(x)){}
 }
 
-function incrementVariable(){
-  i = i+1;
+function incrementVariable(x){
+  x = x+1;
+  return x;
 }
