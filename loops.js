@@ -18,17 +18,17 @@ function whileLoop(n){
 }
 
 
+var i = 0;
+
 function doWhileLoop(arr){
-  var x = 0;
   do {
     arr.pop();
-    incrementVariable(x);
-  } while (arr.length>0 && incrementVariable(x)){
+    incrementVariable();
+  } while (arr.length>0 && incrementVariable()){
     arr.pop();
   }
 }
 
-function incrementVariable(x){
-  x = x+1;
-  return x;
+function incrementVariable(){
+  i = i+1;
 }
