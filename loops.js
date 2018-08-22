@@ -1,9 +1,9 @@
 function forLoop(arr){
   for (let i = 1; i<26; i++){
-    if (i!=1){
-      arr.push(`I am ${i} strange loops.`);
+    if (i===1){
+      arr.push(`I am 1 strange loop.`);
     } else {
-      arr.push(`I am ${i} strange loop.`);
+      arr.push(`I am ${i} strange loops`);
     }
   }
   return arr;
